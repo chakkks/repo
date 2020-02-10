@@ -5,11 +5,12 @@ float speedY = 2.5;
 
 void setup() {
   size(600, 600);
+  background(255,255,255,random(0,50));
 
 }
 
 void draw() {
-  background(255);
+  
   x += speedX;
   y += speedY;
   
@@ -21,7 +22,8 @@ void draw() {
   }
   
   
-  fill(0);
-  ellipse(x,y,20,20);
+  fill(#AD6A84);
+  noStroke();
+  ellipse(x*random(1,10),y*random(1,5),20,20);
   
 }
